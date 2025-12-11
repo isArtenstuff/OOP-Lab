@@ -1,0 +1,21 @@
+# NetBeans build folders (ทุก lab)
+**/build/
+**/dist/
+**/nbbuild/
+**/nbdist/
+**/var/
+
+# NetBeans project config (รวม private ด้วย)
+**/nbproject/
+**/nbproject/private/
+
+# Excluded NetBeans project files
+**/build.xml
+**/manifest.mf
+
+# compiled classes
+*.class
+
+# OS junk
+.DS_Store
+Thumbs.db
