@@ -16,10 +16,9 @@ public class studentClass {
     }
 }
 class Student {
-    String name;
-    double mScore;
-    double fScore;
-    void showGrade(){
+    public String name;
+    public double mScore, fScore;
+    public void showGrade(){
         double s = (mScore * 0.4) + (fScore * 0.4) + 20;
         String grade;
         if (s >= 80){
