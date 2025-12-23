@@ -42,9 +42,18 @@ class Fraction{
         }
     }
     public boolean myEquals(Fraction x){
-        return (this.btmN == x.btmN);
+        return ((this.btmN * x.topN) ==  (x.btmN * this.topN));
     }
     public void LowestTermFrac(){
-        btmN = topN / btmN;
+        int top = topN;
+        int botton = btmN;
+        while (botton != 0){
+            int temp = botton;
+            botton = top % botton;
+            top = temp;
+        }
+        int gcd = top;
+        topN /= gcd;
+        btmN /= gcd;         
     }
 }
